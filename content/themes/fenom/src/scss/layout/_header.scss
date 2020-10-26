@@ -1,0 +1,30 @@
+.header {
+    
+    .info-block {
+        background-color: $main-background;
+        padding: .7em;
+        
+        p {
+            color: $light-grey-text;
+            font-size: small;
+            margin: 0;
+        }
+    }
+    
+    .list-inline {
+
+        &-item {
+            font-weight: bold;
+            color: $light-grey-text;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        
+        .active {
+            color: $black;
+        }
+
+    }
+}

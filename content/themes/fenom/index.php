@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Page Produit</title>
+    <link rel="stylesheet" href="themes/fenom/public/app.c3f9f951.css">
+</head>
+
+<body>
+    <div class="wrapper">
+      <!-------------------------------------------------------------------------------HEADER-------------------------------------------------------------------------------------->
+      <header class="header">
+          <div class="info-block d-none d-lg-block d-xl-block">
+            <p class="info-block-text text-center">livrason gratuite en France sur toutes vos commandes</p>
+          </div>
+          <div class="language-select d-none d-lg-block d-xl-block p-1 text-right">
+            <ol class="list-inline">
+              <li class="list-inline-item">EN</li>
+              <li class="list-inline-item  active">FR</li>
+            </ol>
+          </div>
+          <!------------------ Navbar ------------------------------->
+          <nav class="navbar navbar-expand-lg navbar-light p-1 nav-fill flex-lg-justify-between">
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <img class="navbar-toggler border-0" src="images/svg/interface-burger.svg" height="50px"/>
+              </button>
+              <div class="collapse navbar-collapse order-md-0 order-lg-1" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto mx-auto">
+                      <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle text-uppercase" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Nouveautés</a>
+                        <div class="dropdown-menu">
+                          <div class="d-flex">
+                            <a class="dropdown-item dropright" href="#">Action</a>
+                          </div>
+                          <div class="d-flex">
+                            <a class="dropdown-item dropright" href="#">Action</a>
+                          </div>
+                          <div class="d-flex">
+                            <a class="dropdown-item dropright" href="#">Action</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-uppercase" href="#">Homme</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-uppercase" href="#">Femme</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-uppercase" href="#">Lifestore</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-uppercase" href="#">Skate</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-uppercase" href="#">Marques</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-uppercase" href="#">Outlet</a>
+                      </li>
+                      <li class="nav-item">
+                        <!------------------------ Button trigger large modal -------------------->
+                        <button class="search border-0 d-none d-lg-block d-xl-block" data-toggle="modal" data-target="#searchModalLarge">
+                          <img src="images/svg/interface-search.svg" alt="Logo recherche" height="35px"/>
+                        </button>
+                        <!------------------------------ Large Modal ------------------------------>
+                        <div class="modal fade" id="searchModalLarge" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content rounded-0">
+                              <div class="modal-body">
+                                <div class="input-group">
+                                  <img src="images/svg/interface-search.svg" alt="Logo recherche" height="40px"/>
+                                  <input type="text" class="form-control border-0" placeholder="RECHERCHER UN MODELE" aria-label="Rechercher un modèle" aria-describedby="basic-addon2">
+                                  <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary border-0" type="button"  data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </li>
+                  </ul>
+              </div>
+              <div class="header-logo order-sm-1 order-md-1 order-lg-0 ml-lg-4">
+                <a href="#">
+                  <img src="images/svg/logo-header.svg" alt="Logo Fenom" height="30px"/>
+                </a>
+              </div>
+              <div class="nav-right d-flex order-sm-2 order-lg-2">
+                <!--------------------------- Button trigger modal ------------------------>
+                <button class="search border-0 d-lg-none d-xl-none" data-toggle="modal" data-target="#searchModal">
+                  <img src="images/svg/interface-search.svg" alt="Logo recherche" height="50px"/>
+                </button>
+                <!-------------------------- Modal ---------------------------------->
+                <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content rounded-0">
+                      <div class="modal-body">
+                        <div class="input-group">
+                          <img src="images/svg/interface-search.svg" alt="Logo recherche" height="40px"/>
+                          <input type="text" class="form-control border-0" placeholder="RECHERCHER UN MODELE" aria-label="Rechercher un modèle" aria-describedby="basic-addon2">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary border-0" type="button"  data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="cart d-flex align-items-center">
+                    <a class="user-link d-none d-lg-block d-xl-block"><img src="images/svg/interface-user.svg" alt="cart logo" height="40px"></a>
+                    <img src="images/svg/interface-shopping-cart.svg" alt="cart logo" height="40px">
+                    <p class="text-uppercase d-none d-lg-block d-xl-block m-0">Panier</p>
+                  </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <!---------------------------------------------------------------------------- MAIN CONTAINER ---------------------------------------------------------------------------------------->
+        <main class="main pt-0 d-lg-flex flex-lg-column flex-xl-column">
+          <nav class="d-none d-lg-block d-xl-block" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+              <li class="breadcrumb-item"><a href="#">Homme</a></li>
+              <li class="breadcrumb-item"><a href="#">Skate</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Nike SB Dunk High Pro - Truck it</li>
+            </ol>
+          </nav>
+          <div class="d-lg-flex flex-lg-row flex-xl-row">
+            <section class="product">
+              <div class="main-slider d-lg-none d-xl-none">
+                <div class="slider_item">
+                  <img src="images/img-chaussure-1.jpg" alt="">
+                </div>
+                <div class="slider_item">
+                  <img src="images/img-chaussure-2.jpg" alt="">
+                </div>
+                <div class="slider_item">
+                  <img src="images/img-chaussure-3.jpg" alt="">
+                </div>
+                <div class="slider_item">
+                  <img src="images/img-chaussure-4.jpg" alt="">
+                </div>
+                <div class="slider_item">
+                  <img src="images/img-chaussure-5.jpg" alt="">
+                </div>
+                <div class="slider_item">
+                  <img src="images/img-chaussure-6.jpg" alt="">
+                </div>
+              </div>
+              <div class="mosaic d-none d-lg-flex d-xl-flex flex-wrap flex-row">
+                <div class="col-6">
+                  <img class="img-fluid" src="images/img-chaussure-1.jpg" alt="">
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid" src="images/img-chaussure-2.jpg" alt="">
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid" src="images/img-chaussure-3.jpg" alt="">
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid" src="images/img-chaussure-4.jpg" alt="">
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid" src="images/img-chaussure-5.jpg" alt="">
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid" src="images/img-chaussure-6.jpg" alt="">
+                </div>
+              </div>
+            </section>
+            <section class="product-infos d-lg-flex flex-lg-column flex-xl-column col-lg-4 col-xl-4">
+              <h2 class="infos-title font-weight-bold">Nike SB Dunk High Pro - Truck it</h2>
+              <p class="infos-ref">Référence : BQ6826-003</p>
+              <div class="infos-price d-flex justify-content-start align-items-baseline">
+                <p class="infos-price-base mr-2"><del>80,00€</del></p>
+                <p class="infos-price-reduc bg-dark text-white mr-2">-10%</p>
+                <p class="infos-price-new">75,00€</p>
+              </div>
+            <div class="infos-size">
+              <div class="infos-size-top d-flex justify-content-between align-content-start row row-cols-2  align-items-baseline">
+                <p class="align-items-start col-6 font-weight-bold text-uppercase">Taille</p>
+                <ul class="infos-size-country d-flex col-6 justify-content-end">
+                  <li class="infos-size-country-item p-2 active">EU</li>
+                  <li class="infos-size-country-item p-2">US</li>
+                  <li class="infos-size-country-item p-2">UK</li>
+                  <li class="infos-size-country-item p-2">CM</li>
+                </ul>
+            </div>
+              <ol class="infos-size-list d-flex justify-content-around col-12">
+                <li  class="infos-size-list-item bordered">40</li>
+                <li  class="infos-size-list-item">41</li>
+                <li  class="infos-size-list-item">42</li>
+                <li  class="infos-size-list-item">42.5</li>
+                <li  class="infos-size-list-item">43</li>
+                <li  class="infos-size-list-item">44</li>
+              </ol>
+              <div class="button-addcart d-flex justify-content-center flex-lg-column flex-xl-column">
+                <button type="button" class="btn btn-lg rounded-0 p-3 col-12">Ajouter au panier</button>
+              </div>
+              <p class="collection-text mt-4">Cette Nike SB Dunk High Pro Black/University Gold appartient à la collection</p>
+              <ul class="insurance-list mb-4">
+                <li><img src="images/svg/insurance-2.svg"/>Livraison gratuite en france métropolitaine</li>
+                <li><img src="images/svg/insurance-5.svg"/>Expédition le jour même jusqu'à 13H</li>
+                <li><img src="images/svg/insurance-1.svg"/>Paiement 100% sécurisé</li>
+              </ul>
+              <a class="collection-link mt-4 text-center  justify-content-center"><img src="images/svg/logo-nike.svg" height="35px"/>Voir tout les produits Nike</a>
+            </div>
+            </section>
+          </div>
+        </main>
+        <!---------------------------------------------------------------------------- TOP SLIDER ---------------------------------------------------------------------------------------->
+        <aside class="aside-like">
+          <div class="row">
+            <div class="col-sm-0 col-md-0 col-lg-2"></div>
+            <h3>Vous aimerez aussi</h3>
+          </div>
+          <div class="aside-slider d-lg-none d-xl-none">
+            <div class="slider-item">
+              <div class="card border-0" style="width: 18rem;">
+                <img class="card-img-top mx-auto" src="images/img-chaussure-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="card border-0" style="width: 18rem;">
+                <img class="card-img-top mx-auto" src="images/img-chaussure-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="card border-0" style="width: 18rem;">
+                <img class="card-img-top mx-auto" src="images/img-chaussure-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--------------------------------------------------------------------large slider----------------------------------------------------------------------->
+          <div class="arrows-larger d-lg-block d-xl-block">
+              <div class="d-flex justify-content-end">
+                <p class="see-all d-none d-lg-block d-xl-block text-uppercase">Tout voir</p>
+                <div class="prev-arrow">
+                  <img  height="25px" src="images/svg/nav-arrow-left.svg" alt="">
+                </div>
+                <div class="next-arrow">
+                  <img height="25px" src="images/svg/nav-arrow-right.svg" alt="">
+                </div>
+            </div>
+          </div>
+          <div class="aside-slider-large d-none d-lg-block d-xl-block">
+            <div class="slider-item border-0">
+              <div class="card border-0" style="width: 18rem;">
+                <img class="card-img-top " src="images/img-chaussure-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item border-0">
+              <div class="card border-0" style="width: 18rem;">
+                <img class="card-img-top " src="images/img-chaussure-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item border-0">
+              <div class="card border-0" style="width: 18rem;">
+                <img class="card-img-top " src="images/img-chaussure-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item border-0">
+              <div class="card border-0" style="width: 18rem;">
+                <img class="card-img-top " src="images/img-chaussure-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!---------------------------------------------------------------------------- BOTTOM SLIDER ---------------------------------------------------------------------------------------->
+        <aside class="aside-last">
+          <div class="row">
+            <div class="col-sm-0 col-md-0 col-lg-2"></div>
+            <h3>Derniers articles consultés</h3>
+          </div>
+          <div class="aside-slider d-lg-none d-xl-none">
+            <div class="slider-item">
+              <div class="card border-0" style="width: 18rem;">
+                <img class="card-img-top mx-auto" src="images/img-chaussure-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="card border-0" style="width: 18rem;">
+                <img class="card-img-top mx-auto" src="images/img-chaussure-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="card border-0" style="width: 18rem;">
+                <img class="card-img-top mx-auto" src="images/img-chaussure-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--------------------------------------------------------------------large slider----------------------------------------------------------------------->
+          <div class="arrows-larger d-lg-block d-xl-block">
+              <div class="d-flex justify-content-end">
+                <p class="see-all d-none d-lg-block d-xl-block text-uppercase">Tout voir</p>
+                <div class="prev-arrow">
+                  <img  height="25px" src="images/svg/nav-arrow-left.svg" alt="">
+                </div>
+                <div class="next-arrow">
+                  <img height="25px" src="images/svg/nav-arrow-right.svg" alt="">
+                </div>
+            </div>
+          </div>
+          <div class="aside-slider-large d-none d-lg-block d-xl-block">
+            <div class="slider-item border-0">
+              <div class="card border-0" style="width: 18rem;">
+                <img class="card-img-top " src="images/img-chaussure-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item border-0">
+              <div class="card border-0" style="width: 18rem;">
+                <img class="card-img-top " src="images/img-chaussure-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item border-0">
+              <div class="card border-0" style="width: 18rem;">
+                <img class="card-img-top " src="images/img-chaussure-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item border-0">
+              <div class="card border-0" style="width: 18rem;">
+                <img class="card-img-top " src="images/img-chaussure-1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <aside class="insurance d-flex justify-content-center row row-cols-2 row-cols-sm-2 row-cols-md-4 mx-auto pt-4">
+          <div class="insurance-text col text-center">
+            <img src="images/svg/insurance-2.svg" alt="" height="25%">
+            <h5>Livraison gratuite</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="insurance-text col text-center">
+            <img src="images/svg/insurance-1.svg" alt="" height="25%">
+            <h5>Paiement sécurisé</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="insurance-text col text-center">
+            <img src="images/svg/insurance-4.svg" alt="" height="25%">
+            <h5>Service client</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="insurance-text col text-center">
+            <img src="images/svg/insurance-3.svg" alt="" height="25%">
+            <h5>Retour</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </aside>
+        <!---------------------------------------------------------------------------- FOOTER ---------------------------------------------------------------------------------------->
+        <footer class="footer d-flex flex-column">
+          <div class="footer-first d-flex flex-column flex-lg-row flex-xl-row ">
+            <div class="accordion col-lg-6 col-xl-6 d-lg-none d-xl-none" id="accordionExample">
+              <div class="card border-right-0 border-left-0">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Shop
+                    </button>
+                  </h2>
+                </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <ol>
+                    <li>Homme</li>
+                    <li>Femme</li>
+                    <li>Lifestore</li>
+                    <li>Marques</li>
+                  </ol>
+                </div>
+              </div>
+              </div>
+              <div class="card border-right-0 border-left-0">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Sav
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ol>
+                      <li>Livraison</li>
+                      <li>Retour</li>
+                      <li>Paiement</li>
+                      <li>FAQ</li>
+                      <li>CGV</li>
+                      <li>Infos persos</li>
+                      <li>Mentions</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="card border-right-0 border-left-0">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    à propos
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ol>
+                      <li>Features</li>
+                      <li>Qui sommes-nous</li>
+                      <li>Travailler avec Fenom</li>
+                      <li>Contact</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-list col-lg-6 col-xl-6 d-none d-lg-flex d-xl-flex  justify-content-around">
+              <div class="footer-list-one">
+                <ol class="list-group">
+                  <li class="list-group-item border-0"><span class="footer-list-title">Shop</span></li>
+                  <li class="list-group-item border-0"><a href="#">Homme</a></li>
+                  <li class="list-group-item border-0"><a href="#">Femme</a></li>
+                  <li class="list-group-item border-0"><a href="#">Lifestore</a></li>
+                  <li class="list-group-item border-0"><a href="#">Marques</a></li>
+                </ol>
+              </div>
+              <div class="footer-list-one">
+                <ol class="list-group">
+                  <li class="list-group-item border-0"><span class="footer-list-title">SAV</span></li>
+                  <li class="list-group-item border-0"><a href="#">Livraison</a></li>
+                  <li class="list-group-item border-0"><a href="#">Retour</a></li>
+                  <li class="list-group-item border-0"><a href="#">Paiement</a></li>
+                  <li class="list-group-item border-0"><a href="#">FAQ</a></li>
+                  <li class="list-group-item border-0"><a href="#">CGV</a></li>
+                  <li class="list-group-item border-0"><a href="#">Infos persos</a></li>
+                  <li class="list-group-item border-0"><a href="#">Mentions</a></li>
+                </ol>
+              </div>
+              <div class="footer-list-one">
+                <ol class="list-group">
+                  <li class="list-group-item border-0"><span class="footer-list-title">&Agrave; propos</span></li>
+                  <li class="list-group-item border-0"><a href="#">features</a></li>
+                  <li class="list-group-item border-0"><a href="#">Qui-sommes nous</a></li>
+                  <li class="list-group-item border-0"><a href="#">Travailler avec Fenom</a></li>
+                  <li class="list-group-item border-0"><a href="#">Contact</a></li>
+                </ol>
+              </div>
+            </div>
+            <div class="footer-contact col-lg-6 col-xl-6">
+              <div class="contact mt-4">
+                <p class="contact-head">Suivez-nous pour ne rien manquer !</p>
+                <p class="contact-text">Recevez toutes les infos sur les prochaines sorties, offres et actualités de la boutique Fenom</p>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control rounded-0" placeholder="Inscrivez votre email" aria-label="Recipient's mail" aria-describedby="basic-addon2">
+              <div class="input-group-append rounded-0">
+                <span class="input-group-text rounded-0 bg-dark text-white" id="basic-addon2">S'inscrire</span>
+              </div>
+            </div>
+            <div class="network d-flex justify-content-center justify-content-lg-end justify-content-xl-end m-4">
+            <div class="network-logos">
+              <a href="#">
+                <img src="images/svg/network-facebook.svg"/>
+              </a>
+            </div>
+              <div>
+                <a href="#">
+                  <img src="images/svg/network-instagram.svg"/>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <img src="images/svg/network-twitter.svg"/>
+                </a>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column justify-content-center">
+            <div class="footer-logo d-flex justify-content-center p-3">
+              <img src="images/svg/fenom-footer.svg" alt="logo Fenom alternatif">
+            </div>
+            <div class="p-2 mt-4 mb-4 col-lg-4 col-xl-4 offset-md-4">
+              <img src="images/svg/paiement-livraison.svg" alt="logos moyens de paiement et de livraison">
+            </div>
+          </div>
+        </footer>
+      </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/app.js"></script>
+  
+  </body>
+</html>

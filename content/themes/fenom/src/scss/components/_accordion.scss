@@ -1,0 +1,25 @@
+.accordion {
+    
+    .btn {
+        color: $black;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        
+        //Add arrow
+        &::after {
+            content: "\f107";
+            color: $black;
+            top: -2px;
+            right: 0px;
+            position: absolute;
+            font-family: "FontAwesome"
+
+        }
+    }
+    
+    //Switch arrow when expanded or not
+    .btn[aria-expanded="true"]::after {
+        content: "\f106";
+    }
+}

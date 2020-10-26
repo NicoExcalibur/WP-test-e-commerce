@@ -1,0 +1,83 @@
+.main {
+    padding: $main-padding;
+
+    .infos-ref {
+        color: $light-grey-text;
+    }
+
+    .collection-text {
+        color: $grey-text;
+    }
+
+    .insurance-list {
+        font-size: 95%;
+    }
+    
+    .collection-link {
+        color: $black;
+        text-transform: uppercase;
+        font-weight: bold;
+        
+        img {
+            margin-right: 1em;
+        }
+    }
+
+    .product-infos {
+        
+        .infos-title {
+            font-family: $main-font-condensed;
+        }
+
+        .infos-price {
+            &-base {
+                padding: .2em 0em;
+
+                font-weight: bolder;
+            }
+            
+            &-reduc {
+                padding: .2em .5em;
+                background-color: $black !important;
+            }
+            
+            &-new {
+                font-size: 1.5em;
+                font-weight: bolder;
+            }
+        }
+
+        .infos-size {
+            
+            p {
+                color: $black;
+            }
+
+            &-list {
+                font-weight: bold;
+
+                &-item {
+                    padding: .6em 1em;
+                    cursor: pointer;
+                }
+            }
+
+            &-country {
+                color: $light-grey-text;
+                font-size: smaller;
+                font-weight: bolder;
+                cursor: pointer;
+            }
+
+            .active {
+                color: $black;
+                text-decoration: underline;
+            }
+
+            .bordered {
+                border: $black 2px solid;
+            }
+        }
+
+    }
+}

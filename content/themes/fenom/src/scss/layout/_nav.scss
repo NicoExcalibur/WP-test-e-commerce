@@ -1,0 +1,47 @@
+.navbar {
+    
+    .collapse {
+        
+        ul {
+            
+            .nav-link {
+                font-weight: bolder;
+                color: $black;
+            }
+        }
+    }
+
+    .dropdown {
+        &-menu {
+            
+            a {
+                text-transform: uppercase;
+               
+                &:hover {
+                    background-color: $black;
+                    color: white;
+                }
+
+                &::after {
+                    content: "\f054";
+                    right: 0px;
+                    position: absolute;
+                    font-family: "FontAwesome";
+
+                }
+            }
+        }
+    }
+
+    .dropdown-toggle::after {
+        content: none;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+
+    button {
+        background-color: white !important;
+    }
+}
