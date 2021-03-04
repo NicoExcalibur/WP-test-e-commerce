@@ -1,4 +1,4 @@
-<!---------------------------------------------------------------------------- BOTTOM SLIDER ---------------------------------------------------------------------------------------->
+<!--- BOTTOM SLIDER --->
 <aside class="aside-last">
     <div class="row">
     <div class="col-sm-0 col-md-0 col-lg-2"></div>
@@ -34,7 +34,7 @@
         </div>
     </div>
 
-    <!--------------------------------------------------------------------large slider----------------------------------------------------------------------->
+    <!---large slider---------->
     <div class="arrows-larger d-lg-block d-xl-block">
         <div class="d-flex justify-content-end">
         <p class="see-all d-none d-lg-block d-xl-block text-uppercase">Tout voir</p>
